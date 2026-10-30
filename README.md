@@ -1,1 +1,1 @@
-# myronis
+# myronis Sklep internetowy MYRONIS
