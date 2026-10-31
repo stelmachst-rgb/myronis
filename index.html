@@ -1,159 +1,49 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MYRONIS – Essence of Elegance</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MYRONIS — Essence of Elegance | Perfumy arabskie</title>
+<meta name="description" content="MYRONIS — elegancka kolekcja perfum arabskich dla kobiet i mężczyzn. Sklep w przygotowaniu.">
 <style>
- 
-:root{--gold:#d5ad67;--bg:#090909}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:#f6eee2;font-family:Arial,sans-serif}
-header{background:#080808;position:sticky;top:0;z-index:5;border-bottom:1px solid #6b532d}
-.top{background:#191510;text-align:center;padding:9px;font-size:12px;color:var(--gold)}
-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 5%;flex-wrap:wrap}
-.logo{font-family:Georgia,serif;color:var(--gold);font-size:30px;letter-spacing:5px}
-.logo small{display:block;font:9px Arial;letter-spacing:3px}
-button,select,input{font:inherit}
-button{cursor:pointer}
-nav button,.outline{background:transparent;color:var(--gold);border:1px solid var(--gold);padding:11px}
-.search{background:#191919;color:white;border:1px solid #51412b;padding:12px;width:min(320px,100%)}
-.hero{min-height:420px;background:linear-gradient(90deg,#000e,transparent),url('hero.jpg')65% center/contain no-repeat ;display:flex;align-items:center;padding:6%}
-.hero div{max-width:470px}
-h1{font:clamp(26px,3vw,42px) Georgia,serif;font-weight:normal;line-height:1.15}
-.hero p{line-height:1.7}
-.gold{color:var(--gold)}
-.action{background:var(--gold);border:0;color:#15100a;padding:13px 24px;font-weight:bold}
-section{max-width:1250px;margin:auto;padding:40px 20px}
-h2{text-align:center;font:34px Georgia,serif;font-weight:normal;color:var(--gold)}
-.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.cat{height:190px;background-position:center;background-size:cover;display:flex;align-items:end;padding:20px;font:22px Georgia,serif;text-shadow:0 2px 8px black;cursor:pointer;border:1px solid #5c4528}
-.controls{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}
-.controls select{background:#171717;color:white;border:1px solid #735b37;padding:12px}
-.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.product{border:1px solid #56432a;background:#141414;padding:18px}
-.bottle{height:160px;display:grid;place-items:center;background:radial-gradient(#48321d,#090909);font-size:65px}
-.product h3{font:21px Georgia,serif;min-height:48px}
-.product p{color:#c4b8a6;font-size:13px;line-height:1.6}
-.price{font-size:21px;color:var(--gold);font-weight:bold;margin:12px 0}
-.product button{width:100%;background:var(--gold);padding:12px;border:0}
-.details{background:transparent!important;color:var(--gold);border:1px solid #79603c!important;margin-bottom:8px}
-.overlay{display:none;position:fixed;inset:0;background:#000a;z-index:9}
-.drawer{position:absolute;right:0;top:0;height:100%;width:min(440px,100%);background:#17130e;padding:25px;overflow:auto}
-.cartline{border-bottom:1px solid #54452e;padding:15px 0}
-.cartline button{padding:5px 10px;margin:4px;background:#302519;color:white;border:1px solid #745b38}
-.close{float:right;background:transparent;border:0;color:white;font-size:26px}
-footer{padding:40px;text-align:center;border-top:1px solid #54452e;color:#c4a978}
-@media(max-width:800px){.categories,.products{grid-template-columns:repeat(2,1fr)}.hero{min-height:330px}}
-@media(max-width:480px){.categories,.products{grid-template-columns:1fr 1fr;gap:8px}.cat{height:130px;font-size:16px}.product{padding:9px}.bottle{height:110px}.product h3{font-size:16px}.hero{background-position:60% center}.logo{font-size:23px}}
+:root{--bg:#080808;--panel:#12100f;--gold:#d9b77b;--muted:#b6aa99;--line:#6c5231;--cream:#eee8de}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}a{color:inherit;text-decoration:none}.wrap{max-width:1320px;margin:auto;padding:0 28px}.utility{background:#080808;border-bottom:1px solid #28221c;color:#d9c9ae;font-size:11px}.utility .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}.utility span{white-space:nowrap}.header{background:#090909;border-bottom:1px solid #33271c;position:sticky;top:0;z-index:10}.header-main{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:20px;padding-bottom:17px}.logo{font:30px Georgia,serif;color:var(--gold);letter-spacing:7px;white-space:nowrap;text-align:center}.logo .mark{display:block;font-size:35px;line-height:.85}.logo small{display:block;font:8px Arial,sans-serif;letter-spacing:4px;margin-top:9px}.search-wrap{position:relative;flex:1;max-width:490px}.search{background:#121212;border:1px solid #5e4930;color:white;width:100%;padding:13px 44px 13px 15px}.search-icon{position:absolute;right:15px;top:12px;color:var(--gold);pointer-events:none}.actions{display:flex;gap:15px;align-items:center}.plain{background:none;border:0;color:#d7c9b7;padding:8px;white-space:nowrap}.cart-btn{background:none;border:1px solid var(--gold);color:var(--gold);padding:11px 16px;white-space:nowrap}.nav{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;padding:0 10px 15px;font-size:12px}.nav a:hover,.nav a.active{color:var(--gold)}.nav a.active{border-bottom:1px solid var(--gold);padding-bottom:7px}.hero{position:relative;min-height:435px;display:flex;align-items:center;background-color:#110e0a;background-image:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.78) 31%,rgba(0,0,0,.16) 67%,rgba(0,0,0,.04) 100%),url('hero.jpg');background-size:cover;background-position:center 44%;overflow:hidden}.hero-content{position:relative;z-index:1;width:100%;padding-top:52px;padding-bottom:55px}.eyebrow{color:var(--gold);letter-spacing:2px;font-size:11px;font-weight:bold}.hero h1{font:normal clamp(31px,3.4vw,51px)/1.08 Georgia,serif;max-width:420px;margin:18px 0 14px;text-shadow:0 2px 16px #000}.hero p{max-width:340px;color:#eee1d0;font-size:13px;line-height:1.7}.gold-btn,.outline-btn{display:inline-block;padding:13px 22px;margin-top:14px;text-transform:uppercase;letter-spacing:1px;font-size:11px}.gold-btn{border:1px solid var(--gold);background:var(--gold);color:#130f0a}.outline-btn{border:1px solid var(--gold);background:#0007;color:var(--gold)}.benefits{background:#e9e0d2;color:#2a2118}.benefits .wrap{display:grid;grid-template-columns:repeat(4,1fr)}.benefit{text-align:center;padding:20px 12px;border-right:1px solid #d0c4b5}.benefit:last-child{border:0}.benefit .symbol{font-size:24px}.benefit b{display:block;margin:6px 0;font-size:12px}.benefit small{font-size:10px;color:#63584c}.section{padding-top:47px;padding-bottom:48px}.category-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.category{min-height:215px;position:relative;border:1px solid #60492e;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:end;padding:18px;overflow:hidden;isolation:isolate}.category:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,#000e);z-index:-1}.category h3{font:normal 20px Georgia,serif;margin:0 0 5px}.category p{font-size:11px;color:#d4c6b4;margin:0 0 12px}.category button{align-self:start;background:#0009;color:var(--gold);border:1px solid var(--gold);padding:7px 13px;font-size:11px}.section-title{text-align:center;font:normal 32px Georgia,serif;margin:0 0 24px}.section-title:before,.section-title:after{content:"";display:inline-block;vertical-align:middle;width:55px;border-top:1px solid var(--gold);margin:0 17px}.overline{text-align:center;color:var(--gold);font-size:10px;letter-spacing:3px;margin-bottom:8px}.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:22px}.filters select{background:#17130f;color:#eee;border:1px solid #5e4930;padding:10px;font-size:12px}.product-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.product{background:#12100e;border:1px solid #5d462c;min-width:0;display:flex;flex-direction:column}.product-image{height:175px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 60%,#4a3523 0%,#18130f 48%,#080808 100%);position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:contain;padding:8px}.bottle-art{position:relative;width:64px;height:115px;border-radius:9px 9px 12px 12px;background:linear-gradient(90deg,#0c0b0a,#393028 38%,#080808 76%,#3a2b1a);box-shadow:inset 0 0 0 2px #ad8751,0 10px 20px #000a;display:flex;align-items:center;justify-content:center;color:#e2c391;font:12px Georgia,serif;text-align:center;letter-spacing:1px}.bottle-art:before{content:"";position:absolute;bottom:100%;width:38px;height:22px;border:2px solid #b58b51;border-bottom:0;background:linear-gradient(90deg,#21160f,#a17a42,#21160f)}.product:nth-child(3n) .bottle-art{background:linear-gradient(90deg,#723f46,#edb4b8,#a15b68);color:#4b242d}.product:nth-child(4n) .bottle-art{background:linear-gradient(90deg,#0b2335,#2c5270,#091522)}.product-info{padding:12px;display:flex;flex-direction:column;flex:1}.brand{color:var(--gold);font-size:10px}.product h3{font:normal 15px Georgia,serif;margin:5px 0 7px;min-height:36px}.product .meta{font-size:10px;color:var(--muted);margin:0 0 7px}.price{font-size:16px;color:var(--gold);font-weight:bold;margin-top:auto}.product button{width:100%;margin-top:9px;background:var(--gold);color:#1d140a;border:0;padding:9px 5px;font-size:11px}.product .detail{background:none;color:var(--gold);border:1px solid #6a5133;margin-top:8px}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px}.promos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.promo{min-height:150px;border:1px solid #5b442b;background:linear-gradient(90deg,#000d,#0002),url('men.jpg') center/cover;display:flex;flex-direction:column;justify-content:center;padding:24px}.promo:nth-child(2){background-image:linear-gradient(90deg,#000d,#0002),url('women.jpg')}.promo:nth-child(3){background-image:linear-gradient(90deg,#000d,#0002),url('gift-new.jpg')}.promo h3{font:normal 22px Georgia,serif;margin:0 0 8px}.promo p{font-size:11px;margin:0 0 8px}.promo a{font-size:11px;color:var(--gold)}footer{border-top:1px solid #55432d;background:#070707;padding:28px 0;color:#b7a995;font-size:11px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-logo{color:var(--gold);font:20px Georgia,serif;letter-spacing:4px}.disclaimer{margin-top:20px;font-size:10px;color:#938779}.overlay{position:fixed;inset:0;background:#000b;display:none;z-index:30}.overlay.open{display:block}.drawer{position:absolute;right:0;top:0;bottom:0;width:min(440px,100%);background:#17120d;border-left:1px solid var(--line);padding:26px;overflow:auto}.drawer h2{font:normal 28px Georgia,serif;color:var(--gold)}.close{float:right;background:none;color:white;border:0;font-size:27px}.cartline{padding:14px 0;border-bottom:1px solid #4e3c27;font-size:13px}.cartline button{background:#302519;color:#fff;border:1px solid #80613b;padding:5px 10px;margin:4px}.total{font-size:20px;color:var(--gold);margin-top:20px}.notice{font-size:12px;line-height:1.6;color:#c4b6a3}@media(max-width:1050px){.product-grid{grid-template-columns:repeat(3,1fr)}.category-grid{grid-template-columns:repeat(2,1fr)}.actions .plain{display:none}}@media(max-width:700px){.wrap{padding-left:16px;padding-right:16px}.utility .wrap{justify-content:center}.utility span:nth-child(n+3){display:none}.header-main{flex-wrap:wrap;gap:12px;padding-top:13px}.logo{font-size:23px;letter-spacing:4px}.logo .mark{font-size:25px}.search-wrap{order:3;max-width:none;flex-basis:100%}.nav{gap:16px;padding:12px;font-size:11px}.hero{min-height:410px;background-position:58% center;background-image:linear-gradient(90deg,#000e,#0009 46%,#0002),url('hero.jpg')}.hero-content{padding-top:35px;padding-bottom:35px}.hero h1{max-width:290px;font-size:33px}.hero p{max-width:270px}.benefits .wrap{grid-template-columns:repeat(2,1fr)}.benefit{border-bottom:1px solid #d0c4b5}.category-grid{gap:9px}.category{min-height:155px;padding:12px}.category h3{font-size:17px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-image{height:145px}.promos{grid-template-columns:1fr}.section-title{font-size:26px}.section-title:before,.section-title:after{width:20px;margin:0 8px}}
 </style>
 </head>
 <body>
-<div class="top">✦ Oryginalne perfumy arabskie · MYRONIS · Essence of Elegance</div>
-<header><nav>
-<div class="logo">MYRONIS<small>ESSENCE OF ELEGANCE</small></div>
-<input class="search" id="search" placeholder="Szukaj perfum..." oninput="render()">
-<button onclick="showCart()">🛍 Koszyk (<span id="count">0</span>)</button>
-</nav></header>
-<div class="hero"><div>
-<p class="gold">ORYGINALNE PERFUMY ARABSKIE</p>
-<h1>Luksusowe zapachy, które podkreślają Twoją wyjątkowość</h1>
-<p>Odkryj kolekcję orientalnych kompozycji dla kobiet i mężczyzn.</p>
-<button class="action" onclick="document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">ODKRYJ KOLEKCJĘ</button>
-</div></div>
-<section>
-<h2>Odkryj nasze kolekcje</h2>
-<div class="categories">
-<div class="cat" style="background-image:linear-gradient(transparent,#000c),url('men.jpg')" onclick="filterCat('Męskie')">Perfumy męskie</div>
-<div class="cat" style="background-image:linear-gradient(transparent,#000c),url('women.jpg')" onclick="filterCat('Damskie')">Perfumy damskie</div>
-<div class="cat" style="background-image:linear-gradient(transparent,#000c),url('unisex.jpg')" onclick="filterCat('Unisex')">Zapachy unisex</div>
-<div class="cat" style="background-image:linear-gradient(transparent,#000c),url('gift-new.jpg')" onclick="filterCat('Zestawy')">Zestawy prezentowe</div>
-</div>
-</section>
-<section id="catalog">
-<h2>Najchętniej wybierane</h2>
-<div class="controls">
-<select id="category" onchange="render()">
-<option value="">Wszystkie kategorie</option>
-<option>Męskie</option><option>Damskie</option><option>Unisex</option><option>Zestawy</option>
-</select>
-<select id="brand" onchange="render()">
-<option value="">Wszystkie marki</option>
-<option>Lattafa</option><option>Afnan</option><option>Armaf</option><option>Rasasi</option>
-</select>
-<select id="sort" onchange="render()">
-<option value="">Sortowanie domyślne</option>
-<option value="asc">Cena rosnąco</option>
-<option value="desc">Cena malejąco</option>
-<option value="name">Nazwa A–Z</option>
-</select>
-</div>
-<div class="products" id="products"></div>
-</section>
-<footer>MYRONIS · ESSENCE OF ELEGANCE<br><br>Sklep demonstracyjny · Ceny przykładowe · Płatności nieaktywne</footer>
-<div class="overlay" id="overlay" onclick="if(event.target===this)hideCart()">
-<div class="drawer">
-<button class="close" onclick="hideCart()">×</button>
-<h2>Twój koszyk</h2>
-<div id="cartitems"></div>
-<h3 id="total"></h3>
-<p>Wersja demonstracyjna. Zamówienia i płatności nie są jeszcze aktywne.</p>
-</div></div>
+<div class="utility"><div class="wrap"><span>♧ Darmowa dostawa od 199 zł*</span><span>♢ Oryginalne perfumy — deklaracja sklepu*</span><span>◷ Szybka wysyłka*</span><span>✉ MYRONIS — sklep w przygotowaniu</span></div></div>
+<header class="header"><div class="wrap header-main"><a class="logo" href="#start" aria-label="MYRONIS, strona główna"><span class="mark">M</span>MYRONIS<small>ESSENCE OF ELEGANCE</small></a><div class="search-wrap"><input class="search" id="search" placeholder="Szukaj perfum, marek, nut zapachowych..." aria-label="Szukaj produktów"><span class="search-icon">⌕</span></div><div class="actions"><button class="plain" type="button" onclick="alert('Konto klienta będzie dostępne po uruchomieniu sklepu.')">♙ Moje konto</button><button class="plain" type="button" onclick="alert('Lista ulubionych jest w przygotowaniu.')">♡ Ulubione</button><button class="cart-btn" type="button" onclick="showCart()">♧ Koszyk (<span id="count">0</span>)</button></div></div><nav class="nav" aria-label="Menu główne"><a class="active" href="#start">Strona główna</a><a href="#catalog">Perfumy</a><a href="#catalog">Marki</a><a href="#categories">Zestawy</a><a href="#categories">Miniatury</a><a href="#catalog">Nowości</a><a href="#catalog">Promocje</a><a href="#footer">Kontakt</a></nav></header>
+<main id="start"><div class="hero"><div class="wrap hero-content"><div class="eyebrow">ORYGINALNE PERFUMY ARABSKIE</div><h1>Luksusowe zapachy, które podkreślają Twoją wyjątkowość</h1><p>Odkryj orientalne kompozycje dla kobiet i mężczyzn.</p><a class="outline-btn" href="#catalog">ODKRYJ KOLEKCJĘ →</a></div></div>
+<div class="benefits"><div class="wrap"><div class="benefit"><div class="symbol">♢</div><b>Oryginalne produkty*</b><small>Weryfikacja autentyczności</small></div><div class="benefit"><div class="symbol">♧</div><b>Darmowa dostawa*</b><small>Planowana od 199 zł</small></div><div class="benefit"><div class="symbol">◷</div><b>Szybka wysyłka*</b><small>Warunki w przygotowaniu</small></div><div class="benefit"><div class="symbol">▣</div><b>Bezpieczne płatności*</b><small>Uruchomimy przed sprzedażą</small></div></div></div>
+<section id="categories" class="wrap section"><div class="category-grid"><div class="category" style="background-image:url('men.jpg')"><h3>PERFUMY MĘSKIE</h3><p>Siła. Charakter. Elegancja.</p><button onclick="filterCat('Męskie')">Zobacz →</button></div><div class="category" style="background-image:url('women.jpg')"><h3>PERFUMY DAMSKIE</h3><p>Kobiecość. Zmysłowość. Klasa.</p><button onclick="filterCat('Damskie')">Zobacz →</button></div><div class="category" style="background-image:url('unisex.jpg')"><h3>ZAPACHY UNISEX</h3><p>Dla tych, którzy nie lubią granic.</p><button onclick="filterCat('Unisex')">Zobacz →</button></div><div class="category" style="background-image:url('gift-new.jpg')"><h3>ZESTAWY PREZENTOWE</h3><p>Idealne na każdą okazję.</p><button onclick="filterCat('Zestawy')">Zobacz →</button></div></div></section>
+<section id="catalog" class="wrap section"><div class="overline">BESTSELLERY</div><h2 class="section-title">Najchętniej wybierane</h2><div class="filters"><select id="category" aria-label="Kategoria"><option value="">Wszystkie kategorie</option><option>Męskie</option><option>Damskie</option><option>Unisex</option><option>Zestawy</option></select><select id="brand" aria-label="Marka"><option value="">Wszystkie marki</option><option>Lattafa</option><option>Afnan</option><option>Armaf</option><option>Rasasi</option><option>MYRONIS</option></select><select id="sort" aria-label="Sortowanie"><option value="">Sortowanie domyślne</option><option value="asc">Cena rosnąco</option><option value="desc">Cena malejąco</option><option value="name">Nazwa A–Z</option></select></div><div id="products" class="product-grid"></div><div class="promos"><div class="promo"><h3>MEN'S COLLECTION</h3><p>Siła w każdym detalu.</p><a href="#catalog" onclick="filterCat('Męskie')">Zobacz →</a></div><div class="promo"><h3>WOMEN'S COLLECTION</h3><p>Zmysłowość ma swoją zapachową opowieść.</p><a href="#catalog" onclick="filterCat('Damskie')">Zobacz →</a></div><div class="promo"><h3>ZESTAWY PREZENTOWE</h3><p>Luksus, który zachwyca.</p><a href="#catalog" onclick="filterCat('Zestawy')">Zobacz →</a></div></div></section></main>
+<footer id="footer"><div class="wrap"><div class="footer-inner"><div class="footer-logo">MYRONIS</div><div class="footer-links"><a href="#start">O nas</a><a href="#footer">Dostawa i płatności</a><a href="#footer">Zwroty i reklamacje</a><a href="#footer">Regulamin</a><a href="#footer">Kontakt</a></div><div>ESSENCE OF ELEGANCE</div></div><p class="disclaimer">* Wersja demonstracyjna: ceny, progi dostawy, deklaracje usług i opisy są przykładowe. Zamówienia, płatności i konta klientów są nieaktywne. Przed uruchomieniem sprzedaży należy uzupełnić regulamin, dane firmy, politykę prywatności i potwierdzić warunki ofert.</p></div></footer>
+<div id="overlay" class="overlay" onclick="if(event.target===this)hideCart()"><aside class="drawer" role="dialog" aria-modal="true" aria-label="Twój koszyk"><button class="close" aria-label="Zamknij koszyk" onclick="hideCart()">×</button><h2>Twój koszyk</h2><div id="cartitems"></div><div id="total" class="total"></div><p class="notice">Koszyk demonstracyjny. Składanie zamówień i płatności nie są jeszcze aktywne.</p></aside></div>
 <script>
 const data=[
-["Lattafa Khamrah","Lattafa","Unisex",139,"Cynamon, gałka muszkatołowa","Daktyle, pralina","Wanilia, bursztyn"],
-["Lattafa Asad","Lattafa","Męskie",129,"Czarny pieprz, ananas","Kawa, paczula","Wanilia, ambra"],
-["Lattafa Yara","Lattafa","Damskie",119,"Mandarynka, orchidea","Owoce tropikalne","Wanilia, piżmo"],
-["Rasasi Hawas","Rasasi","Męskie",169,"Jabłko, bergamotka","Śliwka, kardamon","Ambra, piżmo"],
-["Afnan 9PM","Afnan","Męskie",135,"Jabłko, cynamon","Kwiat pomarańczy","Wanilia, tonka"],
-["Armaf Club de Nuit Intense","Armaf","Męskie",139,"Cytryna, ananas","Brzoza, jaśmin","Piżmo, paczula"],
-["Lattafa Fakhar Rose","Lattafa","Damskie",125,"Owoce, kwiaty","Róża, jaśmin","Wanilia, piżmo"],
-["Lattafa Bade'e Al Oud","Lattafa","Unisex",149,"Szafran, lawenda","Oud, paczula","Ambra, piżmo"],
-["Afnan Supremacy","Afnan","Męskie",179,"Cytrusy","Nuty drzewne","Piżmo, ambra"],
-["Armaf Odyssey","Armaf","Męskie",119,"Cytrusy, przyprawy","Nuty kwiatowe","Wanilia, ambra"],
-["Lattafa Ana Abiyedh","Lattafa","Unisex",99,"Bergamotka, pomarańcza","Gruszka, wanilia","Piżmo, ambra"],
-["MYRONIS Zestaw odkrywczy","MYRONIS","Zestawy",159,"Zestaw demonstracyjny","Wybór kompozycji","Szczegóły w przygotowaniu"]
+{name:'Lattafa Khamrah',brand:'Lattafa',cat:'Unisex',price:139,notes:['Cynamon, gałka muszkatołowa','Daktyle, pralina','Wanilia, bursztyn']},
+{name:'Lattafa Asad',brand:'Lattafa',cat:'Męskie',price:129,notes:['Czarny pieprz, ananas','Kawa, paczula','Wanilia, ambra']},
+{name:'Lattafa Yara',brand:'Lattafa',cat:'Damskie',price:119,notes:['Mandarynka, orchidea','Owoce tropikalne','Wanilia, piżmo']},
+{name:'Rasasi Hawas',brand:'Rasasi',cat:'Męskie',price:169,notes:['Jabłko, bergamotka','Śliwka, kardamon','Ambra, piżmo']},
+{name:'Afnan 9PM',brand:'Afnan',cat:'Męskie',price:135,notes:['Jabłko, cynamon','Kwiat pomarańczy','Wanilia, tonka']},
+{name:'Armaf Club de Nuit Intense',brand:'Armaf',cat:'Męskie',price:139,notes:['Cytryna, ananas','Brzoza, jaśmin','Piżmo, paczula']},
+{name:'Lattafa Fakhar Rose',brand:'Lattafa',cat:'Damskie',price:125,notes:['Owoce, kwiaty','Róża, jaśmin','Wanilia, piżmo']},
+{name:"Lattafa Bade'e Al Oud",brand:'Lattafa',cat:'Unisex',price:149,notes:['Szafran, lawenda','Oud, paczula','Ambra, piżmo']},
+{name:'Afnan Supremacy',brand:'Afnan',cat:'Męskie',price:179,notes:['Cytrusy','Nuty drzewne','Piżmo, ambra']},
+{name:'Armaf Odyssey',brand:'Armaf',cat:'Męskie',price:119,notes:['Cytrusy, przyprawy','Nuty kwiatowe','Wanilia, ambra']},
+{name:'Lattafa Ana Abiyedh',brand:'Lattafa',cat:'Unisex',price:99,notes:['Bergamotka, pomarańcza','Gruszka, wanilia','Piżmo, ambra']},
+{name:'MYRONIS Zestaw odkrywczy',brand:'MYRONIS',cat:'Zestawy',price:159,notes:['Zestaw demonstracyjny','Wybór kompozycji','Szczegóły w przygotowaniu']}
 ];
-let cart={};
-try{cart=JSON.parse(localStorage.getItem('myronisCart')||'{}')}catch(e){cart={}}
-const money=n=>n.toFixed(2).replace('.',',')+' zł';
-function render(){
-let q=document.getElementById('search').value.toLowerCase();
-let c=document.getElementById('category').value;
-let b=document.getElementById('brand').value;
-let s=document.getElementById('sort').value;
-let a=data.map((p,i)=>({...{p,i}})).filter(x=>
-(!c||x.p[2]===c)&&(!b||x.p[1]===b)&&x.p.join(' ').toLowerCase().includes(q));
-if(s==='asc')a.sort((x,y)=>x.p[3]-y.p[3]);
-if(s==='desc')a.sort((x,y)=>y.p[3]-x.p[3]);
-if(s==='name')a.sort((x,y)=>x.p[0].localeCompare(y.p[0]));
-document.getElementById('products').innerHTML=a.map(({p,i})=>`
-<div class="product"><div class="bottle">♛</div>
-<p class="gold">${p[1]} · ${p[2]}</p><h3>${p[0]}</h3>
-<p>Kompozycja zapachowa · informacje o produkcie</p>
-<div class="price">${money(p[3])}</div>
-<button class="details" onclick="details(${i})">Zobacz nuty zapachowe</button>
-<button onclick="add(${i})">Dodaj do koszyka</button></div>`).join('')||'<p>Brak produktów spełniających kryteria.</p>';
-updateCount();
-}
+let cart={};try{const saved=JSON.parse(localStorage.getItem('myronisCart')||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))cart=saved}catch(e){}
+const money=n=>Number(n).toFixed(2).replace('.',',')+' zł';
+function render(){const q=document.getElementById('search').value.trim().toLocaleLowerCase('pl');const c=document.getElementById('category').value,b=document.getElementById('brand').value,s=document.getElementById('sort').value;let a=data.map((p,i)=>({p,i})).filter(({p})=>(!c||p.cat===c)&&(!b||p.brand===b)&&[p.name,p.brand,p.cat,...p.notes].join(' ').toLocaleLowerCase('pl').includes(q));if(s==='asc')a.sort((x,y)=>x.p.price-y.p.price);if(s==='desc')a.sort((x,y)=>y.p.price-x.p.price);if(s==='name')a.sort((x,y)=>x.p.name.localeCompare(y.p.name,'pl'));document.getElementById('products').innerHTML=a.map(({p,i})=>`<article class="product"><div class="product-image"><div class="bottle-art" aria-label="Grafika zastępcza flakonu">${p.brand.toUpperCase()}</div></div><div class="product-info"><span class="brand">${p.brand} · ${p.cat}</span><h3>${p.name}</h3><p class="meta">Woda perfumowana · opis demonstracyjny</p><div class="price">${money(p.price)}</div><button class="detail" onclick="details(${i})">Nuty zapachowe</button><button onclick="add(${i})">Dodaj do koszyka</button></div></article>`).join('')||'<p class="empty">Brak produktów spełniających kryteria.</p>';updateCount()}
 function filterCat(c){document.getElementById('category').value=c;render();document.getElementById('catalog').scrollIntoView({behavior:'smooth'})}
-function details(i){let p=data[i];alert(p[0]+'\n\nNuty głowy: '+p[4]+'\nNuty serca: '+p[5]+'\nNuty bazy: '+p[6]+'\n\nCena demonstracyjna: '+money(p[3]))}
-function save(){localStorage.setItem('myronisCart',JSON.stringify(cart));updateCount()}
-function add(i){cart[i]=(cart[i]||0)+1;save();showCart()}
-function updateCount(){document.getElementById('count').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
-function change(i,d){cart[i]+=d;if(cart[i]<=0)delete cart[i];save();showCart()}
-function showCart(){
-document.getElementById('overlay').style.display='block';
-let sum=0;
-document.getElementById('cartitems').innerHTML=Object.entries(cart).map(([i,n])=>{
-let p=data[i];sum+=p[3]*n;
-return `<div class="cartline"><b>${p[0]}</b><p>${money(p[3])} × ${n}</p><button onclick="change(${i},-1)">−</button> ${n} <button onclick="change(${i},1)">+</button><button onclick="delete cart[${i}];save();showCart()">Usuń</button></div>`;
-}).join('')||'<p>Twój koszyk jest pusty.</p>';
-document.getElementById('total').textContent='Razem: '+money(sum);
-}
-function hideCart(){document.getElementById('overlay').style.display='none'}
-render();
+function details(i){const p=data[i];alert(p.name+'\n\nNuty głowy: '+p.notes[0]+'\nNuty serca: '+p.notes[1]+'\nNuty bazy: '+p.notes[2]+'\n\nCena demonstracyjna: '+money(p.price))}
+function save(){try{localStorage.setItem('myronisCart',JSON.stringify(cart))}catch(e){}updateCount()}
+function add(i){cart[i]=(Number(cart[i])||0)+1;save();showCart()}
+function updateCount(){document.getElementById('count').textContent=Object.values(cart).reduce((a,b)=>a+(Number(b)||0),0)}
+function change(i,d){cart[i]=(Number(cart[i])||0)+d;if(cart[i]<=0)delete cart[i];save();showCart()}
+function removeItem(i){delete cart[i];save();showCart()}
+function showCart(){document.getElementById('overlay').classList.add('open');let sum=0;document.getElementById('cartitems').innerHTML=Object.entries(cart).filter(([i,n])=>data[i]&&Number(n)>0).map(([i,n])=>{const p=data[i];sum+=p.price*Number(n);return `<div class="cartline"><b>${p.name}</b><p>${money(p.price)} × ${n}</p><button onclick="change(${i},-1)">−</button> ${n} <button onclick="change(${i},1)">+</button><button onclick="removeItem(${i})">Usuń</button></div>`}).join('')||'<p class="notice">Twój koszyk jest pusty.</p>';document.getElementById('total').textContent='Razem: '+money(sum)}
+function hideCart(){document.getElementById('overlay').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hideCart()});['search','category','brand','sort'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',render));render();
 </script>
-</body>
-</html>
+</body></html>
